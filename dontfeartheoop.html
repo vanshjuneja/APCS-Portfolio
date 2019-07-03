@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<script src="script.js"></script>
+	<title>Vansh Juneja's Portfolio</title>
+	<link rel="stylesheet" href="main.css" >
+</head>
+
+<body>
+		<header>
+			<h1>Vansh's Portfolio</h1>
+			<nav>
+				<ul>
+					<button onclick="window.location.href = 'index.html';">Home</button>
+					<button onclick="window.location.href = 'about.html';">About Me</button>
+					<button onclick="window.location.href = 'tutorials.html';">Tutorials</button>
+					<button onclick="window.location.href = 'projects.html';">Projects</button>
+				</ul>
+			</nav>
+		</header>
+		
+		<section>
+            <button class="tutorial" id="backBtn" onclick="window.location.href = 'tutorials.html';">Back</button>
+			<article id="back">
+                
+		<section class="oop">
+            <h2>Don't Fear The OOP!</h2>
+			<p id="regular">
+                <img width="250px" height="170px" src="images/cafe.jpg" style="float: left; margin-right: 20px;"/><b>This story about a Cafe and Lounge will serve to teach you about Object Oriented Programming in Java! The format and general flow is based off of the reading called “Don’t Fear the OOP” by Johannes Claerbout. The green text is a common English explanation, the yellow text is formatted slightly more like Java code, and the red text will provide full Java code.</b></p>
+			<article id="easy">
+				<p id="gtext">Every cafe and lounge has some fundamental components: tables, chairs, baristas, and customers in the store. A standard café and lounge would have five tables, fifteen chairs, and be located in North America sometime around the year 2018.</p>
+			</article>
+			<p id="gtext">This description has given us the material we need to understand how to define a Cafe and Lounge. It has shown us what the components are that go into making a Cafe and Lounge, and what a standard Cafe and Lounge consists of.</p>
+			<article id="medium">
+				<p id="btext">CafeAndLounge<br>&emsp;has a certain number of tables<br>&emsp;has a certain number of chairs<br>&emsp;has a certain number of baristas<br>&emsp;has a certain number of customersInStore<br>&emsp;is located somewhere<br>&emsp;exists at a certain time<br><br>a typical CafeAndLounge would have<br>&emsp;number of tables = 5<br>&emsp;number of chairs = 15<br>&emsp;location = North America<br>&emsp;time period = 2018</p>
+			</article>
+			<p id="btext">The description has now been modified to format it more like real Java code. The components, also called variables, that belong to the CafeAndLounge<b> class </b>are listed together. The standard settings of a CafeAndLounge are also listed together, allowing us to<b> construct </b>a new Cafe and Lounge.<br><br>The next step we have to complete is to identify the data type of each component. This will show us what kind of values should be used for each variable.</p>
+			<article id="hard">
+				<p id="rtext">public<b> class </b>CafeAndLounge<br>{<br> int tables;<br> int chairs;<br> int baristas;<br> int customersInStore;<br> String location;<br> int time;<br><br><br> public CafeAndLounge()<br> {<br>  tables = 5;<br>  chairs = 15;<br>  location = “North America”;<br>  time = 2018;<br> }<br>}</p>
+			</article>
+			<p id="rtext">Now we have created a<b> class </b>for all Cafe and Lounges. We have an empty frame that shows us what components we need to make a Cafe and Lounge object. We have defined a group of variables, called<b> instance variables </b>that can store values of the data type written before them. The<b> int </b>data type can store integers and the<b> String </b>data type can store strings of characters. The semi-colon indicates the end of a line. It tells us that we have completed a step and that we can move on to the next one. <br><br>We have also created a<b> class </b>constructor. A<b> constructor </b>allows us to make an<b> object </b>using the frame of the class. It sets some values as default values, so every time we make a new Cafe And Lounge, it will start off with those values.<br>
+</p>
+			
+			<article id="easy">
+				<p id="gtext">The release of a new drink at Rainforest Cafe <br>This story takes place in a Cafe and Lounge called Rainforest Cafe and Lounge. Rainforest Cafe and Lounge has two baristas and eight customers in the store.</p>
+			</article>
+			<p id="gtext">In such few lines, we have actually said quite a lot. We have established the particular cafe that the story will take place in, along with the specific number of baristas and customers in our cafe. The rest of the attributes of our cafe will remain the same as the standard cafe we previously defined.</p>
+			<article id="medium">
+				<p id="btext">Main NewDrinkRelease<br><br> CafeAndLounge rainforestCafe is a new CafeAndLounge<br>  the number of baristas in Rainforest Cafe is two.<br>  the number of customers inside Rainforest Cafe is eight.</p>
+			</article>
+			<p id="btext">We have taken some essential steps in setting up our story. To start off, instantiated an<b> object </b>of the type CafeAndLounge. This is like using a cookie cutter (the CafeAndLounge<b> class </b>itself) to carve out a piece of cookie dough (the<b> object </b>instance). After creating this first object, we go on to specify information that was missing in the CafeAndLounge class, like the number of baristas and number of customers.</p>
+			<article id="hard">
+				<p id="rtext">public<b> class </b>NewDrinkRelease<br>{<br> public static void main (String[] args)<br> {<br>  CafeAndLounge rainforestCafe = new CafeAndLounge();<br>  rainforestCafe.baristas = 2;<br>  rainforestCafe.customersInStore = 8;<br> }<br>}</p>
+			</article>
+<p id="rtext">The<b> main method </b>here signifies that it contains the plot, or main routine. After instantiating our CafeAndLounge object, we define the<b> variables </b>that were not specified in the CafeAndLounge<b> class </b>itself (Baristas and Customers). The<b> variables </b>are addressed in<b> dot notation</b>, which is a naming system in which the name of the<b> object </b>is stated, followed by the name of the<b> variable </b>separated by a dot. Following the identification of a variable, its value can be defined proceeding an equal sign.</p>
+			
+			<article id="easy">
+				<p id="gtext">Humans are either male or female, have a name, some money in their wallet and a hair colour. A standard human starts with no money in their wallet. When asked, humans can give you their name and the amount of money in their wallet.</p>
+			</article>
+			<p id="gtext">We have made all the attributes of humans that we wish to change later on variables, so that we are free to do so later on in the story. We have left standard values for a human’s name or sex undefined as humans are not identical in these respects when they start out. We have also stated abilities of humans in the context of our story, being the ability to respond to queries for their name and amount of money in their wallet accordingly.</p>
+			<article id="medium">
+				<p id="btext">Human<br> has a certain sex<br> has a name<br> has some money in their wallets<br> has a hair colour<br><br>A standard human would have<br> no money in their wallet<br><br>When somebody asks for your name<br> tell them your name<br><br>When somebody asks how much money is in your wallet<br> tell them how much money is in your wallet</p>
+			</article>
+			<p id="btext">We have given humans a level of interactivity by having them able to respond with their name or money when prompted. This is called a method and is a core concept of programming.</p>
+			<article id="hard">
+				<p id="rtext">public<b> class </b>Human<br>{<br> String sex;<br> String name;<br> String hairColour;<br> int moneyInWallet;<br><br> public Human ()<br> {<br>  moneyInWallet = 0;<br> }<br><br> public<b> String </b>whatIsYourName ()<br> {<br>  return name;<br> }<br><br> public<b> int </b>howMuchMoneyInYourWallet()<br> {<br>  return moneyInWallet;<br> }<br>}</p>
+			</article>
+<p id="rtext">The “String” and “int” in front of the two bottom<b> methods </b>are there because those<b> methods </b>have<b> return values</b>. They say which type of value will be returned. A<b> String </b>of characters is expressed with “String” and an integer is expressed with “int”.</p>
+			
+			<article id="easy">
+				<p id="gtext">Baristas are based off of humans, but they have a different unique set of traits that allow them to get their work done. Baristas have a morale, which is the energy they have left to keep serving customers, and each one also has to have customers to serve. Baristas start their day with a morale of ten.</p>
+			</article>
+<p id="gtext">No new concepts have been employed here, we are just getting ready to set up another class, or a<b> subclass </b>of the Human class. This will allow us to use qualities that belong to humans, while also allowing us to add some extra<b> variables </b>that will let us specialize baristas.</p>
+			<article id="medium">
+                <p id="btext">Barista<b> extends </b>the idea of a Human<br> <br> Baristas <br>  have a certain morale<br>  have a customer to serve<br><br> A standard barista<br>  starts with a morale of 10<br></p>
+			</article>
+			<p id="btext">Nothing new to learn here, we’re just organising the ideas we put together in the previous section.</p>
+			<article id="hard">
+				<p id="rtext">public<b> class </b>Barista extends Human<br>{<br> int morale;<br> Customer person;<br><br> public Barista() {<br>  morale = 10;<br> }<br>}</p>
+			</article>
+			<p id="rtext">Here we have made a subclass, and we have used the word extends to represent that baristas are humans, just a specialized type of human.</p>
+			
+			<article id="easy">
+				<p id="gtext">Baristas can get very stressed while doing their work, so sometimes they meditate to increase their morale. Everytime that a barista sits down to meditate, their morale increases by one.</p>
+			</article>
+			<p id="gtext">Although this may look just like what we have been doing thus far, notice that we are now specifying how a character acts, rather than simply the way it looks. Another thing to understand, it that a<b> variable </b>is being altered here, specifically the “morale” variable.</p>
+			<article id="medium">
+				<p id="btext">meditate<br> morale increases by one</p>
+			</article>
+			<p id="btext">Here we’ve split up our explanation, separating the method name.</p>
+			<article id="hard">
+				<p id="rtext">public void meditate()<br>{<br> morale++;<br>}</p>
+			</article>
+			<p id="rtext">Everything here is fairly straightforward, except the new “++” being used. This merely adds one to the value of the<b> variable </b>which precedes it, which in this case is “morale”.</p>
+			
+			<article id="easy">
+				<p id="gtext">Baristas also like to check on each other to see how their coworkers are feeling. Whenever someone asks a barista how their morale is doing, they respond with their morale.</p>
+			</article>
+			<article id="medium">
+				<p id="btext">whatIsMyMorale<br> tell them my morale</p>
+			</article>
+			<article id="hard">
+				<p id="rtext">public<b> int </b>whatIsMyMorale()<br>{<br> return morale;<br>}</p>
+			</article>
+			<p id="rtext">Here you may have noticed that we put the word “int” in the method header, this just indicates what kind of value we are returning. Since we are returning morale, which is an<b> int </b>variable, the method must be declared with<b> int </b>in the header.</p>
+			
+			<article id="easy">
+				<p id="gtext">Customers are also based off of humans, however they also have some additional traits. These traits include a level of thirst and a beverage preference. A standard customer will start off with a level 5 of thirst as they haven’t had anything to drink yet.</p>
+			</article>
+			<p id="gtext">Here we are doing exactly what we did when we first defined baristas, we’ve identified another specialized type of Human, which we will also make a subclass with.</p>
+			<article id="medium">
+				<p id="btext">Customer extends the idea of a Human<br><br> Customer<br>  has a certain thirst<br>  has a preference in beverage<br><br> A standard customer<br>  has a thirst level of 2<br><br> When somebody asks how thirsty you are<br>  tell them how thirsty you are <br><br> When somebody asks for your beverage preference<br>  tell them your beverage preference</p>
+			</article>
+			<article id="hard">
+				<p id="rtext">public<b> class </b>Customer extends Human<br>{<br> int thirst;<br> String beveragePreference;<br><br> public Customer()<br> {<br>  thirst = 5;<br> }<br><br> public<b> int </b>personsThirst(){<br>  return thirst;<br> }<br><br> public<b> String </b>whatIsYourBeveragePreference(){<br>  return beveragePreference;<br> }<br>}</p>
+			</article>
+			<p id="rtext">The Customer<b> class </b>has two attributes which we have defined, as well as two methods. These<b> variables </b>and<b> methods </b>will be used by <b> objects </b> of the Customer class, but not <b> objects </b> of the Human or Barista class, as they were only written in this class.</p>
+			
+			<article id="easy">
+				<p id="gtext">Baristas can serve customers their beverage preference, which they then declare out loud to the entire cafe. This lowers the customer’s thirst, however, it is tiring and lowers the barista’s morale :(</p>
+			</article>
+			<article id="medium">
+				<p id="btext">serveCustomer<br> morale decreases by one<br> customer’s thirst decreases by one<br> barista says who and what they served</p>
+			</article>
+			<article id="hard">
+				<p id="rtext">public<b> String </b>serveCustomer(Customer person)<br>{<br> this.person = person;<br> person.thirst--;<br> morale--;<br> return “I just served ” + person.name + “ a ” + person.beveragePreference;<br>}</p>
+			</article>
+<p id="rtext">Here we are passing an<b> object </b>of the Customer class. This allows us to access information about the customer, while working out of the Barista class. We see the use of a<b> String </b>return which allows the barista to say a sentence that includes two of the customer’s attributes. We also modify a<b> variable </b>that belongs to the customer: thirst, and a<b> variable </b>that belongs to the barista.</p>
+			
+			<article id="easy">
+				<p id="gtext">We’ve learned a whole lot about the fun things a barista can do, now we’re just going to put it all together:<br><br>Baristas are also based off of humans, but they have a different unique set of traits that allow them to get their work done. Baristas have a morale, which is the energy they have left to keep serving customers, and each one also has to have customers to serve. Baristas start their day with a morale of ten. Baristas can get very stressed while doing their work, so sometimes they meditate to increase their morale. Everytime that a barista sits down to meditate, their morale increases by one. Baristas also like to check on each other to see how their coworkers are feeling. Whenever someone asks a barista how their morale is doing, they respond with their morale. Baristas can serve customers their beverage preference, which they then declare out loud to the entire cafe. This lowers the customer’s thirst, however, it is tiring and lowers the barista’s morale :(</p>
+			</article>
+			<article id="medium">
+				<p id="btext">Barista extends the idea of Human<br> All baristas<br>  have a certain morale<br>  have a customer to serve<br><br> A standard barista<br>  starts with a morale of 10<br><br> meditate<br>  morale increases by one<br><br> whatIsMyMorale<br>  tell them my morale<br><br> serveCustomer<br>  morale decreases by one<br>  customer’s thirst decreases by one<br>  barista says who and what they served</p>
+			</article>
+			<article id="hard">
+				<p id="rtext">public<b> class </b>Barista extends Humans<br>{<br> int morale;<br> Customer person;<br><br> public Barista() {<br>  morale = 10;<br> }<br><br> public void meditate()<br> {<br>  morale++;<br> }<br><br> public<b> int </b>whatIsMyMorale()<br> {<br>  return morale;<br> }<br><br> public<b> String </b>serveCustomer(Customer person)<br> {<br>  this.person = person;<br>  person.thirst--;<br>  morale--;<br>  return “I just served ” + person.name + “ a ” + person.beveragePreference;<br> }<br>}</p>
+			</article>
+			<p id="rtext">In this section, we combined everything we know about Baristas: both their attributes as well as their actions, then organised it into one big class.</p>
+			
+			<article id="easy">
+				<p id="gtext">A new drink is being released at the Rainforest Cafe. This story takes place in a Cafe and Lounge called Rainforest Cafe and Lounge. Rainforest Cafe and Lounge has two baristas and eight customers in the store. There is a female barista named Ruby, who has red hair and 10 dollars in her wallet. Fred is a male customer, whose beverage preference is hot chocolate and who has 12 dollars in their wallet. In this story, Ruby meditates, and then updates everyone on her new morale level. Next, she serves Fred his drink, and Fred lets us know his new level of thirst.</p>
+			</article>
+			<article id="medium">
+				<p id="btext">Main Plot of NewDrinkRelease<br><br>CafeAndLounge rainforestCafe is a new CafeAndLounge<br> the number of baristas in Rainforest Cafe is two<br> the number of customers inside the store is eight<br><br>There is a new barista named Ruby<br> Ruby has red hair<br> Ruby has 10 dollars in her wallet<br><br>There is a new customer named Fred<br> Fred has 12 dollars in his wallet<br> Fred has a beverage preference of hot chocolate<br><br>Ruby meditates<br>Ruby tells us her morale level<br>Ruby serves Fred a beverage<br>Fred tells us his level of thirst</p>
+			</article>
+			<article id="hard">
+				<p id="rtext">public<b> class </b>NewDrinkRelease<br>{<br> public static void main (String[] args)<br> {<br>  CafeAndLounge rainforestCafe = new CafeAndLounge();<br>  rainforestCafe.baristas = 2;<br>  rainforestCafe.customersInStore = 8;<br><br>  Barista ruby = new Barista();<br>  ruby.name = “Ruby”;<br>  ruby.moneyInWallet = 10;<br>  ruby.sex = “female”;<br>  ruby.hairColour = “red”;<br><br>  Customer fred = new Customer();<br>  fred.name = “Fred”;<br>  fred.moneyInWallet = 12;<br>  fred.sex = “male”;<br>  fred.beveragePreference = “Hot Chocolate”;<br><br>  ruby.meditate();<br>  System.out.println(ruby.whatIsMyMorale());<br>  System.out.println(ruby.serveCustomer(fred));<br>  System.out.println(fred.personsThirst());<br><br> }<br>}</p>
+			</article>
+			<p id="rtext">A new instance of the Rainforest Cafe and Lounge is created people’s attributes are assigned the console window shows us fred’s thirst. The baristas and customersInStore attributes of the rainforestCafe<b> object </b>are also assigned values. We also create <b> objects </b> of the Barista and Customer classes to make Ruby and Fred, who then perform the actions specified in the story through the<b> methods </b>that we previously defined for their classes.</p>
+			
+		</section>
+			</article>
+            <button class="tutorial" id="backBtn" onclick="window.location.href = 'tutorials.html';">Back</button>
+		</section>
+
+		<footer class="footer">
+			<p>© 2018-2019 Vansh Juneja Design LLC.</p>
+		</footer>
+</body>
+</html>

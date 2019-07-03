@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<script src="script.js"></script>
+	<title>Vansh Juneja's Portfolio</title>
+	<link rel="stylesheet" href="main.css" >
+</head>
+
+<body>
+		<header>
+			<h1>Vansh's Portfolio</h1>
+			<nav>
+				<ul>
+					<button onclick="window.location.href = 'index.html';">Home</button>
+					<button onclick="window.location.href = 'about.html';">About Me</button>
+					<button onclick="window.location.href = 'tutorials.html';">Tutorials</button>
+					<button onclick="window.location.href = 'projects.html';">Projects</button>
+				</ul>
+			</nav>
+		</header>
+    
+        <section class="tutorial">
+            <button class="tutorial" id="backBtn" onclick="window.location.href = 'tutorials.html';">Back</button>
+            <article>
+                <h2>Program Design / OOP2</h2>
+                <h3>Polymorphism</h3>
+                <p>
+                    Polymorphism is the system that allows an object to act the part of many different datatypes, ranging from it's own class, all the way up to it's highest-level Object superclass, and everything in between. An Object can be cast up from its own class, but not down. This is because a subclass is it's superclass, but a superclass is not necssarily a specific one of its subclass. This is similat to how all squares are rectangles, but not all rectangles are squares. 
+                </p>
+                <section>
+                    <img src="images/polymorphism.jpg" style="align-self: center; padding: 10px;"/>
+                </section>
+                <p>
+                    Java makes a decision on which method within a class hierarchy should be executed based on a polymorphic system called binding. This is determined by the object type, not the object reference.
+                </p>
+                <br/>
+                <h3>Static and Dynamic Binding
+                </h3>
+                <p id="p">
+                    <b>Dynamic Binding:</b>
+                    <br/>
+                    The overloading of a method between a superclass and subclass in polymorphism. Java’s compiler dynamically decides the correct method to be executed based on the object type and method arguments.
+                </p>
+                <p id="p">
+                    <b>Static Binding:</b>
+                    <br/>
+                    Also known as early binding, static binding is the overloading of a method within the same class. It is static because the method call is “hard-coded” meaning that it will always accord with one of the overloaded methods.
+                </p>
+            </article>
+            <button class="tutorial" id="backBtn" onclick="window.location.href = 'tutorials.html';">Back</button>
+        </section>
+
+		<footer class="footer">
+			<p>© 2018-2019 Vansh Juneja Design LLC.</p>
+		</footer>
+</body>
+</html>

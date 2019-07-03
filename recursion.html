@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<script src="script.js"></script>
+	<title>Vansh Juneja's Portfolio</title>
+	<link rel="stylesheet" href="main.css" >
+</head>
+
+<body>
+		<header>
+			<h1>Vansh's Portfolio</h1>
+			<nav>
+				<ul>
+					<button onclick="window.location.href = 'index.html';">Home</button>
+					<button onclick="window.location.href = 'about.html';">About Me</button>
+					<button onclick="window.location.href = 'tutorials.html';">Tutorials</button>
+					<button onclick="window.location.href = 'projects.html';">Projects</button>
+				</ul>
+			</nav>
+		</header>
+    
+        <section class="tutorial">
+            <button class="tutorial" id="backBtn" onclick="window.location.href = 'tutorials.html';">Back</button>
+            <article>
+                <h2>Recursion</h2>
+                <p>In Java, recursion occurs when a method calls itself, referred to as a recursive program. For a solution to be considered recursive, there must be some method of reducing it into smaller sets of repeated actions. There must also be some way to realize once the repetition cycle must be broken and reach an endpoint. By the end, all of these smaller repeated sets of action must result in the greater goal that they set out to accomplish in the beginning. An everyday example of recursion may include the trunks of fruit trees, that contain layers or “rings” moving outwards from the center. A new ring of bark is generated roughly annually and therefore increases the diameter of a tree as the years pass, one ring at a time. Counting the number of rings from the center of a tree trunk can be an accurate method of telling its age.
+                </p>
+                
+                <p>
+                    The following is an example of recursive code used to calculate positive factorials:
+                </p>
+                <br/>
+                <section>
+                    <img width="450px" height="170px" src="images/recursionCode.jpg" style="align-self: center;"/>
+                </section>
+                <br/>
+                <p>
+                    If this method is executed with the parameter 5, the ultimate return value would be 120. Recursive calls like this can be mapped with diagrams such as this one:
+                </p>
+                <section>
+                    <img width="500px" height="534px" src="images/recursionDiagram.png" style="align-self: center;"/>
+                </section>
+                <p>
+                    Two problems that come along with recursion in programming are space and time. Space becomes a problem when dealing with recursive methods with a number of recursive calls greater than can be handled with the amount of memory available. This is because a different section of memory has to be allocated for every method call, recursive or not. This includes all parameters, local variables, etc. The second problem, time, is very noticeably deficient in recursive solutions. This is due to the time it takes to place parameter variables in the stack, manipulate them in the code, potentially execute a recursive call, then return some value, and finally remove the parameters from the stack, etc.
+                    <br/>
+                    The reasons to use recursion rather than an iterative solution are elegance and a direct reflection of an algorithm. Elegance may seem unimportant but simplicity and readability of code are very important, especially when working in a large company where many other programmers will need to understand your solution and how it works. The direct reflection of an algorithm as code is also a factor that mustn’t be overlooked. It is another factor which becomes more apparent later in life when one understands the cost-savings in software maintenance that come along with it.
+
+                </p>
+                <br/>
+                <p>
+                    Mutual recursion is recursive behaviour between two methods. This means that one method calls a second method, which again calls the original method and so on. At least one of the two methods should simplify the problem and/or take steps to solve it as to make sure execution is not infinite (resulting in a stack overflow error as well). Tail recursion is a form of recursion where the recursive return statement (tail call) is the very last line of the program. Tail recursion is considered to be the best form of recursion as it can be optimised by the compiler due to the simple formation (no commands to execute after the recursive statement as it is the last line of the method).
+                </p>
+            </article>
+            <button class="tutorial" id="backBtn" onclick="window.location.href = 'tutorials.html';">Back</button>
+        </section>
+
+		<footer class="footer">
+			<p>© 2018-2019 Vansh Juneja Design LLC.</p>
+		</footer>
+</body>
+</html>

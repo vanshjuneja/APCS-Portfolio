@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<script src="script.js"></script>
+	<title>Vansh Juneja's Portfolio</title>
+	<link rel="stylesheet" href="main.css" >
+</head>
+
+<body>
+		<header>
+			<h1>Vansh's Portfolio</h1>
+			<nav>
+				<ul>
+					<button onclick="window.location.href = 'index.html';">Home</button>
+					<button onclick="window.location.href = 'about.html';">About Me</button>
+					<button onclick="window.location.href = 'tutorials.html';">Tutorials</button>
+					<button onclick="window.location.href = 'projects.html';">Projects</button>
+				</ul>
+			</nav>
+		</header>
+    
+        <section class="tutorial">
+            <button class="tutorial" id="backBtn" onclick="window.location.href = 'tutorials.html';">Back</button>
+            <article>
+                <h2>Arrays</h2>
+                <br id="break">
+                <div id="row">
+                    <table>
+                        <tr>
+                            <th>index</th>
+                            <th>element</th>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>0</td>
+                        </tr>   
+                        <tr>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>3</td>
+                        </tr>
+                    </table>
+                    <p style="
+    width: 70%;">
+                        An array is an object that holds a constant number of values, all of the same data type. Each value is held within index 0..k-1 of the array where k is the number of array indices. The value of an index is called its element.
+                        <br/>
+                        <br/>
+                        In Java, all elements of an array are by default initialized as 0 for array types integer, long, short, double, byte, and float, while for char they are '\u0000', false for boolean, and null for any Object (including String).
+                        <br/>
+                        <br/>
+                        The array depicted in the table to the left would be initialized with the following code:
+                        <br/>
+                    </p>
+                    <section>
+                        <code><mark>int[] arrayName = new int[5];</mark></code>
+                    </section>
+                    <p>
+                        <br/>
+                        You would then set the element of the 0th index to 4 and element of the fourth index to 3 with the following code:
+                        <br/>
+                    </p>
+                    <section>
+                        <code><mark><br/>arrayName[1] = 4;<br/>arrayName[4] = 3</mark></code>
+                    </section>
+                    <p>
+                        <br/>
+                        You can then access a certain elements of an array using similar syntax. You can access the number of array indices using the constant length attribute. The following code shows an alternate method of initalizing the array without having to set elements in different lines, followed by printing the fourth element (3) to the console and the length of the array (5) seperated by a space:
+                        <br/>
+                    </p>
+                    <section>
+                    <code><mark><br/>int[] arrayName = {4, 0, 0, 0, 3};<br/>System.out.println(arrayName[4] + " " + arrayName.length);</mark></code>
+                    </section>
+                    <p>
+                        <br/>
+                        Java looks at an array as an Object, so just like other Objects you are able to make an array of arrays. These are called 2-D or 2-dimensional arrays. In Java, 2-D arrays are row-major. This means the first set of square brackets [] refer to the row, and the second [] is the column. The following code exemplifies the initialization, modification, and access of a 2-D String array:
+                        <br/>
+                    </p>
+                    <section>
+                    <code><mark><br/>String[][] stringArr = new String[3][4];<br/>stringArr[0][2] = "hi";<br/>System.out.println(stringArr[0][2] + " " + stringArr[].length);</mark></code>
+                    </section>
+                    <p>
+                        <br/>
+                        The above code would output "hi 4" without the quotes. After running this code, the stringArr can be shown in a diagram as such:
+                        <br/>
+                    </p>
+                    <img src="images/diagram.jpg" style="width: 50%; margin-left: 25%;"/>
+                </div>
+            </article>
+            
+            <article>
+                <h2>ArrayLists</h2>
+                <p>
+                    An ArrayList is a data structure that works similar to an array in the sense that it contains values of the same data type within index elements. An ArrayList are more versatile in comparison to an array however, as the number of indices is not set as it is not constant. The size (allocated memory) automatically increases and decreases in size as needed, which also a means that indices do not have deafault values at initialization. A limitation of ArrayLists is that they cannot hold primitive types, only Objects (including wrapper classes such as Integer). When adding an int value to an Integer ArrayList, it is automatically converted to an Integer. The following code initializes an ArrayList and adds elements to represent the same table used in the arrays example above.
+                </p>
+                <section>
+                    <code><mark><br/>ArrayList arrLstName&lt;Integer&gt; = new ArrayList&lt;Integer&gt;();<br/>arrLstName.add(4);<br/>arrLstName.add(0);<br/>arrLstName.add(0);<br/>arrLstName.add(3);</mark></code>
+                </section>
+                <p><br/>
+                    As seen in the code, the add() method is used to append elements to the end of the ArrayList. An add() method call with 2 parameters however, works differently. Suppose the first parameter is some data type e, and the second parameter is int k All elements in the ArrayList from k to the final element are moved one index forward,  and e is placed in index k. Another important ArrayList method is get(), which is what is used to get the element at a certain index in the ArrayList. This code will add(9) to the second index, and then print the third index to the console.
+                </p>
+                <section>
+                    <code><mark><br/>arrLstName.add(9, 2);<br/>System.out.println(arrLstName.get(3));</mark></code>
+                </section>
+                <p><br/>
+                    The output of this code would be "3" without the quotes.
+                </p>
+                <p>
+                    The last piece of essential ArrayList is the size() method. This is the equivelant to the length attribute in an array. It returns the number of elements in the ArrayList, but it is not a constant like length, as the number of elements in an ArrayList is flexible. Below shows an example of it's use, where the number 2 would be printed to the console.
+                </p>
+                <section>
+                    <code><mark><br/>ArrayList arrList&lt;Integer&gt; = new ArrayList&lt;Integer&gt;();<br/>arrList.add(0);<br/>arrList.add(0);<br/>System.out.println(arrList.size());</mark></code>
+                </section>
+            </article>
+            <button class="tutorial" id="backBtn" onclick="window.location.href = 'tutorials.html';">Back</button>
+        </section>
+
+		<footer class="footer">
+			<p>© 2018-2019 Vansh Juneja Design LLC.</p>
+		</footer>
+</body>
+</html>

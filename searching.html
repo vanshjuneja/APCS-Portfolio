@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<script src="script.js"></script>
+	<title>Vansh Juneja's Portfolio</title>
+	<link rel="stylesheet" href="main.css" >
+</head>
+
+<body>
+		<header>
+			<h1>Vansh's Portfolio</h1>
+			<nav>
+				<ul>
+					<button onclick="window.location.href = 'index.html';">Home</button>
+					<button onclick="window.location.href = 'about.html';">About Me</button>
+					<button onclick="window.location.href = 'tutorials.html';">Tutorials</button>
+					<button onclick="window.location.href = 'projects.html';">Projects</button>
+				</ul>
+			</nav>
+		</header>
+    
+        <section class="tutorial">
+            <button class="tutorial" id="backBtn" onclick="window.location.href = 'tutorials.html';">Back</button>
+            <article>
+                <h2>Searching Algorithms</h2>
+                <h3>Sequential Search</h3>
+                <p>
+                    Sequential search is the most common searching algorithm. It traverses a list in index order until the element is found, and therefore has an average time complexity of O(n). Such a searching algorithm can be implemented with a for loop going from 0 to the final index of an array or ArrayList.
+                </p>
+                <section>
+                    <img src="images/linearSearch.gif" style="align-self: center; padding: 10px;"/>
+                </section>
+                <h3>Binary Search</h3>
+                <p>
+                    If the array or ArrayList being searched is sorted, then binaray search can be used to traverse at an average time complexity of O(log n). Binary search works by starting with a minimumIndex variable of 0 and maximumIndex variable of array/ArrayList length. The search beings in the center index ((minimumIndex+maximumIndex)/2), and checks whether the element at that index matches the element being searched for. If it does, then it exits, but if not it compares whether the current element is less than or greater than the value being looked for. If it is greater, then the minimumIndex is set to the current index, and vice versa if it is lower. The process is then repeated from the (minimumIndex+maximumIndex)/2 search until the value is found.
+                </p>
+                <section>
+                    <img src="images/binarySearch.gif" style="align-self: center; padding:10px;"/>
+                </section>
+            </article>
+            
+            <article>
+                <h2>Sorting Algorithms</h2>
+                <h3>Selection Sort</h3>
+                <p>
+                    Selection sort works by traversing every element of a sub-section of the array to find the minimum value. The sub-section starts to include the entire array from start to end. Once reached the end of the sub-section, the minimum value is swapped with the first sub-section element, and the start index of the subsection is iterated by 1. This is repeated until only one element remains in the sub-section. This algorithm becomes highly inefficient as the number of elements increases, due to its low average time complexity of O(n^2).
+                </p>
+                <section>
+                    <img src="images/selectionSort.gif" style="align-self: center; padding:10px;"/>
+                </section>
+                <h3>Insertion Sort</h3>
+                <p>
+                    Insertion sort functions by traversing a sub-section of the array, where the sub-section starts with only the first 2 elements and increases by 1 each iteration. Every iteration, the last element in the sub-section is swapped to the previous element, until the previous element is smaller than the current or the start or the array is reached. Insertion sort also has an average time complexity of O(n^2).
+                </p>
+                <section>
+                    <img src="images/insertionSort.gif" style="align-self: center; padding:10px;"/>
+                </section>
+                <h3>Merge Sort</h3>
+                <p>
+                    Merge sort works by first repeatedly breaking down an array into smaller and smaller sub-arrays, until each one contains only one element. After this, sub-arrays are combined into larger arrrays, comparing elements to place them in order. If no elements remain in one of the 2 arrays being combined, then the rest of the element in the remaining sub array are appended onto the end of the combined array. Arrays repeatedly combine until they finally form one coherent, sorted array.
+                </p>
+                <section>
+                    <img src="images/mergeSort1.gif" style="align-self: center; padding:10px;"/>
+                    <img src="images/mergeSort2.gif" style="align-self: center; padding:10px;"/>
+                </section>
+            </article>
+            <button class="tutorial" id="backBtn" onclick="window.location.href = 'tutorials.html';">Back</button>
+        </section>
+
+		<footer class="footer">
+			<p>© 2018-2019 Vansh Juneja Design LLC.</p>
+		</footer>
+</body>
+</html>
